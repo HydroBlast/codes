@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Convert Your Case </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+    <div class="cookiebar">
+        <p>This website uses cookies to ensure you get the best experience on our website. <span class="btns"><a href="" class="btn">See details</a> <button class="btn ok">Don't show this again</button></span>
+        </p>
+    </div>
+
+    <div class="wrapper">
+        <!--[if lte IE 8]><div class="message upgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</div><![endif]-->
+        <div class="nojs message upgrade">JavaScript is required to use this web site. Please turn it on in your browser or whitelist this site, then refresh the page.</div>
+        <div id="container">
+            <h1>Accidentally left the caps lock on and typed something, but can't be bothered to start again and retype it all?</h1>
+            <p>
+                <label for="content">Simply enter your text and choose the case you want to convert it to.</label>
+            </p>
+
+            <form action="/" method="post">
+                <div class="row">
+                    <textarea id="content" placeholder="Type or paste your content here"></textarea>
+                </div>
+            </form>
+            <div class="messages"></div>
+            <div class="actions">
+                <button id="sentence" class="btn">Sentence case</button>
+                <button id="lower" class="btn">lower case</button>
+                <button id="upper" class="btn">UPPER CASE</button>
+                <button id="capitalized" class="btn">Capitalized Case</button>
+                <button id="alternating" class="btn">aLtErNaTiNg cAsE</button>
+                <button id="title" class="btn">Title Case</button>
+                <button id="inverse" class="btn">InVeRsE CaSe</button>
+                <button id="download" class="btn">Download Text</button>
+                <button id="copy" class="btn" data-clipboard-target="#content">Copy to Clipboard</button>
+            </div>
+            <div class="row counts">Character Count: <span class="char_count">0</span> | Word Count: <span class="word_count">0</span>
+            </div>
+
+
+            <div class="credits center">
+                <p>Copyright &copy;2017 <a href="" target="_blank">Dark Valley</a> | <a href="#">Privacy Policy</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')
+    </script>
+    <script>
+        var copied = "Text copied to clipboard!",
+            manual_copy = "Press Ctrl+C to copy text",
+            downloaded = "Text downloaded!",
+            no_text = "Please enter some text first!",
+            file_name = "darkvalley.txt"
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
