@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Home - Online Makeup</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="styles/theme.css" type="text/css" />
+    <link rel="stylesheet" href="styles/theme_extra.css" type="text/css" />
+    <link rel="stylesheet" href="styles/highlight.css">
+
+    <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+    </script>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="js/highlight.pack.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+    <div class="wy-grid-for-nav">
+
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+            <div class="wy-side-nav-search">
+                <a href="." class="icon icon-home"> Online Makeup</a>
+
+            </div>
+
+            <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+
+
+                    <li class="toctree-l1 current">
+
+                        <a class="current" href=".">Home</a>
+                        <ul class="subnav">
+
+                            <li class="toctree-l2"><a href="#welcome">Welcome</a>
+                            </li>
+
+                            <ul>
+
+                                <li><a class="toctree-l3" href="#install">Install</a>
+                                </li>
+
+                                <li><a class="toctree-l3" href="#configuration">configuration</a>
+                                </li>
+
+                                <li><a class="toctree-l3" href="#avaliable-options">Avaliable options</a>
+                                </li>
+
+                                <li><a class="toctree-l3" href="#events">Events</a>
+                                </li>
+
+                                <li><a class="toctree-l3" href="#methods">Methods</a>
+                                </li>
+
+                                <li><a class="toctree-l3" href="#extras">Extras</a>
+                                </li>
+
+                            </ul>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+            <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href=".">Online Makeup</a>
+            </nav>
+
+
+            <div class="wy-nav-content">
+                <div class="rst-content">
+                    <div role="navigation" aria-label="breadcrumbs navigation">
+                        <ul class="wy-breadcrumbs">
+                            <li><a href=".">Docs</a> &raquo;</li>
+
+
+
+                            <li>Home</li>
+                            <li class="wy-breadcrumbs-aside">
+
+                            </li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div role="main">
+                        <div class="section">
+
+                            <h1 id="welcome">Welcome</h1>
+                            <p>Online Makeup is a javascript based virtual makeover tool for your websites. This is take advantage of HTML canvas and done virtual makeup of user provide images. Online Makeup used multiple javascript library for find face and get landmark and apply different effects.</p>
+                            <h2 id="install">Install</h2>
+                            <p>Online Makeup have a three <code>support.js</code> files and one <code>kit.js</code>. Support js files contain multiple javascript library files include jquery,fabric,chart..etc.</p>
+                            <h3 id="include-style-files-like-this-on-your-html-file">include style files like this on your HTML file</h3>
+                            <pre><code>&lt;link rel="stylesheet" type="text/css" href="styles/kit.css" /&gt;
+&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" &gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/kit.support.css" /&gt;
+</code></pre>
+                            <p>yes we use fontawsome for icons.</p>
+                            <h3 id="include-script-files-like-this-on-your-html-file">include script files like this on your HTML file</h3>
+                            <pre><code>&lt;script type="text/javascript" src="js/model.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/kit.support.1.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/kit.support.2.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/kit.support.3.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/kit.js"&gt;&lt;/script&gt;
+</code></pre>
+                            <p>In <code>kit.js</code> contain Heart of all methods and events.</p>
+                            <h2 id="configuration">configuration</h2>
+                            <h3 id="basic-initialization">Basic initialization</h3>
+                            <pre><code>&lt;script&gt;
+    var makeoverKit = new makeoverKit({
+        //configuration &amp; options
+    });
+    makeoverKit.init();
+&lt;/script&gt;
+</code></pre>
+                            <h2 id="avaliable-options">Avaliable options</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Options</th>
+                                        <th>value</th>
+                                        <th>Default</th>
+                                        <th>description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>canvas</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'default'</code>
+                                        </td>
+                                        <td>this is our main canvas,All effects apply here</td>
+                                    </tr>
+                                    <tr>
+                                        <td>waterMark</td>
+                                        <td>boolean</td>
+                                        <td><code>true</code>
+                                        </td>
+                                        <td>if this true water mark applied on image top left</td>
+                                    </tr>
+                                    <tr>
+                                        <td>waterMarkText1</td>
+                                        <td>string</td>
+                                        <td><code>'darkvalley'</code>
+                                        </td>
+                                        <td>water mark text 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>waterMarkText2</td>
+                                        <td>string</td>
+                                        <td><code>'Developed by DarkValley'</code>
+                                        </td>
+                                        <td>water mark text 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>manualPoints</td>
+                                        <td>boolean</td>
+                                        <td><code>false</code>
+                                        </td>
+                                        <td>if you already have a face landmark points you can set it true and push your own point (beware of canvas offset)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>facePoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>nosePoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipPoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipOpenPoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>leftEyePoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rightEyePoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>leftEyeBrowPoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>rightEyeBrowPoint</td>
+                                        <td>Array</td>
+                                        <td><code>[]</code>
+                                        </td>
+                                        <td>if <code>manualPoints</code> is true,this is require</td>
+                                    </tr>
+                                    <tr>
+                                        <td>photoInput</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'files'</code>
+                                        </td>
+                                        <td>this is input tag id for uploading image eg:<code>&lt;input id='files'/&gt;</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>webCam</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'web-cam-btn'</code>
+                                        </td>
+                                        <td>webcam button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>undoBtn</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'undo-btn'</code>
+                                        </td>
+                                        <td>undo button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clearAll</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'clear-all-btn'</code>
+                                        </td>
+                                        <td>clear all button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>new</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'new-btn'</code>
+                                        </td>
+                                        <td>new button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>redoBtn</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'redo-btn'</code>
+                                        </td>
+                                        <td>undo button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>previewBtn</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'preview-btn'</code>
+                                        </td>
+                                        <td>preview button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>downloadBtn</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'down-btn'</code>
+                                        </td>
+                                        <td>download button selector</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mainTab</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'main-tabs'</code>
+                                        </td>
+                                        <td>main tabs id selector for jqueryui tabs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipTab</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lip-tabs'</code>
+                                        </td>
+                                        <td>lip tabs id selector for jqueryui tabs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyeTab</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eye-tabs'</code>
+                                        </td>
+                                        <td>eye tabs id selector for jqueryui tabs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>headTab</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'head-tabs'</code>
+                                        </td>
+                                        <td>head tabs id selector for jqueryui tabs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>zoomSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'zoom-slider'</code>
+                                        </td>
+                                        <td>zoom slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipstickAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipstick-amt'</code>
+                                        </td>
+                                        <td>lipstick amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipsglossAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipgloss-amt'</code>
+                                        </td>
+                                        <td>lipgloss amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>liplinerAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipliner-amt'</code>
+                                        </td>
+                                        <td>lipliner amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyeshadowAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeshadow-amt'</code>
+                                        </td>
+                                        <td>eye shadow amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyeshadowSizeSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeshadow-size'</code>
+                                        </td>
+                                        <td>eye shadow size slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyelinerAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeliner-amt'</code>
+                                        </td>
+                                        <td>eye liner amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyelinerSizeSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeliner-size'</code>
+                                        </td>
+                                        <td>eye liner size slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyebrowAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyebrow-amt'</code>
+                                        </td>
+                                        <td>eye brow amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyebrowSizeSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyebrow-size'</code>
+                                        </td>
+                                        <td>eye brow size slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>foundationAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'foundation-amt'</code>
+                                        </td>
+                                        <td>foundation amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>concealerAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'concealer-amt'</code>
+                                        </td>
+                                        <td>concealer amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>blushAmtSlider</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'blush-amt'</code>
+                                        </td>
+                                        <td>blush amount slider id selector for jquery ui slider</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipstickColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of lipstick chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipglowColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of lipgloss chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>liplinerColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of lipliner chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyeshadowColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of eyeshadow chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyelinerColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of eyeliner chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyebrowColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of eyebrow chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>foundationColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of face foundation chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>concealerColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of face concealer chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>blushColors</td>
+                                        <td>Array</td>
+                                        <td>some set of colors</td>
+                                        <td>this is the color of face blush chart can define color like <code>['red']</code> or <code>["#FF6384"]</code> or <code>['rgb(255,255,255)']</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipstickChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipstick-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lipglossChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipgloss-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>liplinerChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'lipliner-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyeshadowChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeshadow-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyelinerChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyeliner-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eyebrowChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'eyebrow-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>foundationChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'foundation-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>concealerChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'concealer-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>blushChart</td>
+                                        <td>ID (string)</td>
+                                        <td><code>'blush-color-chart'</code>
+                                        </td>
+                                        <td>id selector for color chart</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2 id="events">Events</h2>
+                            <h3 id="1-onkitinit">1.) onKitInit</h3>
+                            <pre><code> document.addEventListener('onKitInit', function () {
+    //kit init
+  }, false);
+</code></pre>
+                            <h3 id="2-onchartchange">2.) onChartChange</h3>
+                            <pre><code>document.addEventListener('onChartChange', function (e) {
+    console.log(e.detail)
+}, false);
+</code></pre>
+                            <h3 id="3-onchartclick">3.) onChartClick</h3>
+                            <pre><code>document.addEventListener('onChartClick', function (e) {
+    console.log(e.detail)
+}, false);
+</code></pre>
+                            <h3 id="4-onmakeupapply">4.) onMakeupApply</h3>
+                            <pre><code>document.addEventListener('onMakeupApply', function (e) {
+    console.log(e.detail)
+}, false);
+</code></pre>
+                            <h2 id="methods">Methods</h2>
+                            <h3 id="1-colorchart-whichcolor">1.) colorChart (which,color)</h3>
+                            <pre><code>makeoverKit.colorChart('lipstick',['red','green']);
+//Avaliable which is given below
+//color = Array
+</code></pre>
+                            <p>avaliable <code>which</code> = <code>lipstick</code>,<code>lipliner</code>,<code>lipgloss</code>,<code>eyeshadow</code>,<code>eyeliner</code>,<code>eyebrow</code>,<code>foundation</code>,<code>concealer</code>,<code>blush</code> this is can change color of particular color chart.</p>
+                            <h3 id="2-lipstickcoloramount">2.) lipstick(color,amount)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipstick on image.you can also access global value <code>window.lipstickColor</code> or <code>window.lipstickAmount</code>.</p>
+                            <h3 id="3-lipglosscoloramount">3.) lipgloss(color,amount)</h3>
+                            <pre><code>makeoverKit.lipgloss('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipgloss on image.you can also access global value <code>window.lipglossColor</code> or <code>window.lipglossAmount</code>.</p>
+                            <h3 id="4-liplinercoloramount">4.) lipliner(color,amount)</h3>
+                            <pre><code>makeoverKit.lipliner('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipliner on image.you can also access global value <code>window.liplinerColor</code> or <code>window.liplinerAmount</code>.</p>
+                            <h3 id="5-eyeshadowcoloramountsize">5.) eyeshadow(color,amount,size)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5,10);
+//color = any color
+//amount = 0 to 1
+//size = 0 to 50
+</code></pre>
+                            <p>This method allow to apply eyeshadow on image.you can also access global value <code>window.eyeshadowColor</code> or <code>window.eyeshadowAmount</code> or <code>window.eyeshadowSize</code>.</p>
+                            <h3 id="6-eyelinercoloramountsize">6.) eyeliner(color,amount,size)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5,10);
+//color = any color
+//amount = 0 to 1
+//size = 0 to 25
+</code></pre>
+                            <p>This method allow to apply eyeliner on image.you can also access global value <code>window.eyelinerColor</code> or <code>window.eyelinerAmount</code> or <code>window.eyelinerSize</code>.</p>
+                            <h3 id="7-eyebrowcoloramountsize">7.) eyebrow(color,amount,size)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5,10);
+//color = any color
+//amount = 0 to 1
+//size = 0 to 10
+</code></pre>
+                            <p>This method allow to apply eyebrow on image.you can also access global value <code>window.eyebrowColor</code> or <code>window.eyebrowAmount</code> or <code>window.eyebrowSize</code>.</p>
+                            <h3 id="8-foundationcoloramount">8.) foundation(color,amount)</h3>
+                            <pre><code>makeoverKit.foundation('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipstick on image.you can also access global value <code>window.facefoundationColor</code> or <code>window.facefoundationAmount</code>.</p>
+                            <h3 id="9-concealercoloramount">9.) concealer(color,amount)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipstick on image.you can also access global value <code>window.faceconcealerColor</code> or <code>window.faceconcealerAmount</code>.</p>
+                            <h3 id="10-blushcoloramount">10.) blush(color,amount)</h3>
+                            <pre><code>makeoverKit.lipstick('red',0.5);
+//color = any color
+//amount = 0 to 1
+</code></pre>
+                            <p>This method allow to apply lipstick on image.you can also access global value <code>window.faceblushColor</code> or <code>window.faceblushAmount</code>.</p>
+                            <h2 id="extras">Extras</h2>
+                            <p>For HTML styling refer <code>index.html</code> and <code>kit.css</code> file. we use <code>webcam.swf</code> for user take through photos from webcame this is mandatory for if you are using webcam button.</p>
+                            <h3 id="html-layout">HTML layout</h3>
+                            <pre><code>//html layout must be like this
+&lt;div id="makeoverKit"&gt;
+    &lt;div id="left-div" class="left-div" style="display:none"&gt;
+        //here color chart and tabs panel
+    &lt;/div&gt;
+    &lt;div id="center-div"&gt;
+        //here upload button and models images
+    &lt;/div&gt;
+     &lt;div id="right-div" class="right-div" style="display:none"&gt;
+        //edit canvas and tools buttons
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            <p>you can change layout but make sure have these <code>class</code> and <code>id</code>s. </p>
+
+                        </div>
+                    </div>
+                    <footer>
+
+
+                        <hr/>
+
+                        <div role="contentinfo">
+                            <!-- Copyright etc -->
+
+                        </div>
+
+
+                    </footer>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <div class="rst-versions" role="note" style="cursor: pointer">
+        <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+    </div>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>
+

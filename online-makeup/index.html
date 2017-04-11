@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Online Makeup</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="styles/kit.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/kit.support.css" />
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+        <style>
+            body{
+                background: #f1f1f1
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 100%; text-align: center;">
+           
+            <div style="width: 100px;float: right;background: #50E6B6;color: #fff;box-shadow: 1px 2px 4px rgba(0,0,0,0.3);padding: 10px;">
+                <a style="text-decoration: none;color: #fff;" href="docs.html">DOCS</a>
+            </div>
+            <div id="makeoverKit">
+
+
+                <div id="left-div" class="left-div" style="display:none">
+                    <div class="kit-tabs">
+                        <div id="main-tabs" class="main-tabs">
+                            <ul>
+                                <li id="lip"><a href="#main-tabs-1">Lip</a></li>
+                                <li id='eye'><a href="#main-tabs-2">Eye</a></li>
+                                <li id='face'><a href="#main-tabs-3">Face</a></li>
+                            </ul>
+                            <div id="main-tabs-1" class="main-child-tabs">
+                                <div id="lip-tabs">
+                                    <ul>
+                                        <li><a href="#lip-tabs-1">Lipstick</a></li>
+                                        <li><a href="#lip-tabs-2">Gloss</a></li>
+                                        <li><a href="#lip-tabs-3">Liner</a></li>
+                                    </ul>
+                                    <div id="lip-tabs-1">
+                                        <div class="sub-tab-right">
+
+                                            <div class="slider-div">
+                                                <span class="slider-lable">Amount</span>
+                                                <div id="lipstick-amt" class="amt-slider"  title="libstick amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="lipstick-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="lip-tabs-2">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <span class="slider-lable">Amount</span>
+                                                <div id="lipgloss-amt" class="amt-slider"  title="lipgloss amount"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="color-chart">
+                                            <canvas id="lipgloss-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="lip-tabs-3">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="lipliner-amt" class="amt-slider"  title="lipliner amount"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="color-chart">
+                                            <canvas id="lipliner-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-tabs-2" class="main-child-tabs">
+                                <div id="eye-tabs">
+                                    <ul>
+                                        <li><a href="#eye-tabs-1">Shadow</a></li>
+                                        <li><a href="#eye-tabs-2">Liner</a></li>
+                                        <li><a href="#eye-tabs-3">Brows</a></li>
+                                    </ul>
+                                    <div id="eye-tabs-1">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="eyeshadow-amt" class="amt-slider" title="eyeshadow amount"></div>
+                                            </div>
+                                            <div class="slider-div">
+                                                <p class="slider-lable">size</p>
+                                                <div id="eyeshadow-size" class="amt-slider"  title="eyeshadow amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="eyeshadow-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="eye-tabs-2">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="eyeliner-amt" class="amt-slider"  title="eyeliner amount"></div>
+                                            </div>
+                                            <div class="slider-div">
+                                                <p class="slider-lable">size</p>
+                                                <div id="eyeliner-size" class="amt-slider"  title="eyeliner amount"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="color-chart">
+                                            <canvas id="eyeliner-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="eye-tabs-3">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="eyebrow-amt" class="amt-slider"  title="eyebrow amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-div">
+                                            <p class="slider-lable">size</p>
+                                            <div id="eyebrow-size" class="amt-slider"  title="eyebrow amount"></div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="eyebrow-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-tabs-3" class="main-child-tabs">
+                                <div id="head-tabs">
+                                    <ul>
+                                        <li><a href="#head-tabs-1">Foundation</a></li>
+                                        <li><a href="#head-tabs-2">Concealer</a></li>
+                                        <li><a href="#head-tabs-3">Blush</a></li>
+                                    </ul>
+                                    <div id="head-tabs-1">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="foundation-amt" class="amt-slider"  title="foundation amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="foundation-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="head-tabs-2">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="concealer-amt" class="amt-slider"  title="concealer amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="concealer-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="head-tabs-3">
+                                        <div class="sub-tab-right">
+                                            <div class="slider-div">
+                                                <p class="slider-lable">Amount</p>
+                                                <div id="blush-amt" class="amt-slider"  title="blush amount"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-chart">
+                                            <canvas id="blush-color-chart" width="250" height="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+                <div id="center-div">
+                 	<br>
+                    <h1 style="color:#50e6b6;">Online Makeup</h1>
+                    <p>Make sure your image look like below model images, otherwise facedection doesn't work!!</p>
+                    <div id="input-div" class="input-div">          
+                        <h5>Upload your photo or Directly take your photo via WebCam</h5>          
+                        <span class="tools-btn" title="upload" id="upload-btn"><i class="fa fa-upload" aria-hidden="true"></i></span>          
+                        <span class="tools-btn" title="webcam" id="web-cam-btn"><i class="fa fa-camera" aria-hidden="true"></i></span>        
+                        <input id="files" style="display:none" type="file">          
+                        <div class="mod-div" style="display:none;">           
+                            <h5>Recent</h5>          
+                        </div>          
+                        <div class="mod-div">           
+                            <h5>If you don't have any photo then select any Model</h5>           
+                            <img class="mod-img" src="img/models/206750644.jpg"> 
+                            <img class="mod-img" src="img/models/60870052.jpg">
+                            <img class="mod-img" src="img/models/323982494.jpg">          
+                        </div>      
+                    </div>       
+                </div>       
+                <div id="right-div" class="right-div" style="display:none">        
+                    <div class="tools-top">          
+                        <span id="clear-all-btn" class="tools-btn" title="Clear All"><i class="fa fa-eraser" aria-hidden="true"></i></span>          
+                        <span id="new-btn" class="tools-btn" title="New"><i class="fa fa-file" aria-hidden="true"></i></span>        
+                    </div> 
+                    <div id="edit-Wrapper" class="canvas-div"> 
+                        <canvas id="default" width="480" height="480" ></canvas> 
+                    </div>
+                    <div class="tools">          
+                        <span id="point" class="tools-btn" title="points"><i class="fa fa-spinner" aria-hidden="true"></i></span>          
+                        <span id="undo-btn" class="tools-btn" title="undo"><i class="fa fa-undo" aria-hidden="true"></i></span>          
+                        <span id="redo-btn" class="tools-btn" title="redo"><i class="fa fa-repeat" aria-hidden="true"></i></span>          
+                        <div id="zoom-slider" title="zoom"></div>       
+                        <span id='preview-btn' class="tools-btn" title="preview"><i class="fa fa-eye" aria-hidden="true"></i></span>                 
+                        <a id="down-btn" class="tools-btn" title="download"><i class="fa fa-download" aria-hidden="true"></i></a>       
+                    </div>        
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="js/model.js"></script>
+        <script src="js/kit.support.1.js"></script>
+        <script src="js/kit.support.2.js"></script>
+        <script src="js/kit.support.3.js"></script>
+        <script type="text/javascript" src="js/kit.js"></script>
+        <script>
+            var makeoverKit = new makeoverKit();
+            makeoverKit.init();
+
+            $('#upload-btn').click(function () {
+                $('#files').trigger('click');
+            })
+
+        </script>
+    </body>
+</html>
